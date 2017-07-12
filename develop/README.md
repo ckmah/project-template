@@ -11,5 +11,4 @@ Format should follow:
   - related 3rd party imports
   - local application/library specific imports
   - styling
-3. Data import
-4. Analysis
+3. Analysis

@@ -1,2 +1,2 @@
 # project-template
-Template for Jupyter Notebook projects.
+Template for Jupyter Notebook based research projects.

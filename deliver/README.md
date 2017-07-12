@@ -1,6 +1,6 @@
 # deliver folder
 
-Clean notebooks are stored here. Notebooks are presentable and should not contain any prototyping or debugging code. Code should be clean and organized. Each notebook should be ~4-10 cells long and represent a coherent chunk of the analysis.
+Clean notebooks are stored here. Notebooks are presentable and should not contain any prototyping or debugging code. Code should be clean and organized. Each notebook should represent a coherent chunk of the analysis.
 
 
 Follow notebook organization conventions as stated in the develop [README.md](../develop/README.md).

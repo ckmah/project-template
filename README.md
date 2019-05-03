@@ -1,15 +1,20 @@
 # project-template
-Template for Jupyter Notebook based research projects.
+Template for Jupyter Notebook based research projects. Update description on a project by project basis to describe additional folder hierarchy.
 
-- `data` | Store relevant data here. Self-explanatory
-
-- `deliver` | Clean notebooks are stored here. Notebooks are presentable and should not contain any prototyping or debugging code. Code should be clean and organized. Each notebook should represent a coherent chunk of the analysis. Notebooks should be labeled sequentially:
-  > 1 - Name<br>
-  > 2 - Name<br>
-  > 3 - Name
-
-- `develop` | Developmental notebooks that may be messy, but provide a narrative of the all data exploration. Notebook names should follow the format `YYYY-MM-DD-cm-some-description`.
+- `data` | Store data here. Provide instructions to download sensitive data if necessary.
 
 - `figures` | Store figures naming folders according to notebook name.
 
-- `scripts` | Any repetitive cross-notebook code should be stored here in scripts. Tasks that don't need to be rerun or notebooks that have irrelevant outputs should be converted to a script.
+- `notebooks` | Each notebook should represent a coherent chunk of the analysis.
+
+- `results` | Save final project results including figures, captions, data, etc.
+
+- `scripts` | This folder should incude function libraries, data munging scripts, or other code that would otherwise clutter the notebook. All high-levels commands necessary to follow the analyses should be kept here.
+
+- `Start_Notebook.ipynb` | Use this notebook as the landing page for the project. Link out all additional notebook from here.
+
+## Acknowledgements
+
+Inspiration taken from googling many blog posts (and dealing with clutter over the years) including:
+
+https://github.com/outlierbio/ob-project-template

@@ -7,7 +7,7 @@ Template for Jupyter Notebook based research projects. Update description on a p
 
 - `notebooks` | Each notebook should represent a coherent chunk of the analysis.
 
-- `results` | Save final project results including figures, captions, data, etc.
+- `publish` | Save all final project exports for publishing and sharing.
 
 - `scripts` | This folder should incude function libraries, data munging scripts, or other code that would otherwise clutter the notebook. All high-levels commands necessary to follow the analyses should be kept here.
 

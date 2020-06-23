@@ -1,20 +1,26 @@
 # project-template
-Template for Jupyter Notebook based research projects. Update description on a project by project basis to describe additional folder hierarchy.
+A template for Jupyter Notebook based research projects. I try to describe the project goals, organization, and data here.
 
-- `data` | Store data here. Provide instructions to download sensitive data if necessary.
+## Notebooks: the project narrative
+- `*.ipynb` | The core of your project narrative and analyses. TODO create template notebook `Template.ipynb`.
 
-- `figures` | Store figures naming folders according to notebook name.
+- `presentation.mplstyle` | My custom `matplotlib` stylesheet for default plot properties How to use in notebooks:
+    ```
+    import matplotlib.pyplot as plt
+    >>> plt.style.use('presentation.mplstyle')
+    ```
 
-- `notebooks` | Each notebook should represent a coherent chunk of the analysis.
+- `environment.yml` | The project virtual environment generated with `conda env export --no-builds > environment.yml`. I strongly recommend documenting the packages you use for analyses for the sake of reproducibility. [conda](https://www.anaconda.com/products/individual) is a cross-platform package manager that allows you to do so easily.
 
-- `publish` | Save all final project exports for publishing and sharing.
+## Stay organized with a couple folders
+- `data` | Store data here. Provide instructions to access data if it's too big, sensitive, etc. and is stored somewhere else.
 
-- `scripts` | This folder should incude function libraries, data munging scripts, or other code that would otherwise clutter the notebook. All high-levels commands necessary to follow the analyses should be kept here.
+- `plots` | Save generated figures here; this way, figures can be viewed without rendering notebooks.
 
-- `Start_Notebook.ipynb` | Use this notebook as the landing page for the project. Link out all additional notebook from here.
+- `scripts` | I usually store bash scripts and utility functions/classes here.
 
-## Acknowledgements
+## References
 
-Inspiration taken from googling many blog posts (and dealing with clutter over the years) including:
+Inspiration taken from googling many blog posts (and dealing with clutter over the years).
 
 https://github.com/outlierbio/ob-project-template

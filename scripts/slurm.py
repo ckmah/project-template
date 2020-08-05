@@ -4,8 +4,8 @@ def new_slurm_script(script_name, cpus_per_task='1', mem_per_cpu='5G', array_t='
         f.write(f'''#! /bin/bash
 
 #SBATCH --job-name={script_name}
-#SBATCH --output={script_name}_%a.out
-#SBATCH --error={script_name}_%a.err
+#SBATCH --output=/cellar/users/ckmah/logs/%A_%a.out
+#SBATCH --error=/cellar/users/ckmah/logs/%A_%a.err
 #SBATCH --cpus-per-task={cpus_per_task}
 #SBATCH --mem-per-cpu={mem_per_cpu}
 #SBATCH --array={array_t}%{array_tc}

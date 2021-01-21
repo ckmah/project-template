@@ -7,7 +7,7 @@ A template for Jupyter Notebook based research projects. I try to describe the p
 - `presentation.mplstyle` | My custom `matplotlib` stylesheet for default plot properties How to use in notebooks:
     ```
     import matplotlib.pyplot as plt
-    >>> plt.style.use('presentation.mplstyle')
+    >>> plt.style.use('presentation.mplstyle.py')
     ```
 
 - `environment.yml` | The project virtual environment generated with `conda env export --no-builds > environment.yml`. I strongly recommend documenting the packages you use for analyses for the sake of reproducibility. [conda](https://www.anaconda.com/products/individual) is a cross-platform package manager that allows you to do so easily.
